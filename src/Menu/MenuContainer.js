@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import data from "./menu-data.json";
 import _ from "lodash";
-
+//design the ALL DAY | LUNCH SPECIAL buttons at top
+//scrollable menu with side buttons
+//start working before talking to artemis...
 var populate_section = (filtered_data, category) =>
     {return(filtered_data.filter(item => item.category === category).map((item) => {
         return(
@@ -20,38 +22,20 @@ class MenuContainer extends Component{
         //console.log(all_day_groups)
         //console.log(cats)
         return( //console.log("success")
-            <div className="Menu">
+            <div className="container">
                 <div className="all-day">
-                    <h1>All Day Menu</h1>
-                    <h2>Appetizers</h2>
-                    {all_day_menu.filter(item => item.category === "Appetizer").map((item) => {
-                        return(
-                        <div> 
-                            <h4>{item.name}</h4>
-                            <p>{item.description}</p>
-                            <text>{item.price}</text>
-                        </div>
-                        )}
-                    )
-                    }
+                    <h2 className="menu-section">Appetizers</h2>
+                    {populate_section(all_day_menu,"Appetizer")}
                     <h2>Soup</h2>
-                    {/*populate_section(all_day_menu,"Soup")*/}
-                    {all_day_menu.filter(item => item.category === "Soup").map((item) => {
-                        return(
-                        <div> 
-                            <h4>{item.name}</h4>
-                            <p>{item.description}</p>
-                            <text>{item.price}</text>
-                        </div>
-                        )}
-                    )
-                    }
+                    {populate_section(all_day_menu,"Soup")}
                     <h2>Beverages</h2>
                     {populate_section(all_day_menu,"Beverage")}
                 </div>
                 <div className="lunch-special">
-                    <h1>Lunch Specials</h1>
-                    
+                    <h2>Noodle And Fried Rice</h2>
+                    {populate_section(lunch_specials,"Noodle And Fried Rice")}
+                    <h2>Seafood</h2>
+                    {populate_section(lunch_specials,"Seafood")}
                 </div>
             </div>
         );

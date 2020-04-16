@@ -16,12 +16,13 @@ class Main extends Component{
             <HashRouter>
                 <div className="container"> 
                     <ul className="nav-bar">
-                        <li><NavLink exact to="/">Home</NavLink></li>
+                        <li className="left-bttn"><NavLink exact to="/">Home</NavLink></li>
                         <li><NavLink to="/menu">Menu</NavLink></li>
                         <li><NavLink to="/location">Location</NavLink></li>
                         <li><NavLink to="/about">About Us</NavLink></li>
-                        <li><NavLink to="/order">Order Online</NavLink></li>
+                        <li className="right-bttn"><NavLink to="/order">Order Online</NavLink></li>
                     </ul>
+                    <div className="break"></div>
                     <div className="content">
                         <Route exact path="/" component={Home}/>
                         <Route path="/menu" component={Menu}/>

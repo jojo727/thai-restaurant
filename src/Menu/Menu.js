@@ -4,7 +4,14 @@ import "./Menu.scss"
 
 class Menu extends Component{
     render(){
-        return(<MenuContainer/>);
+        return(
+        <div className="menu">
+            <div className="menu-type">
+                <h1>All Day Menu</h1>
+                <h1>Lunch Specials</h1>
+            </div>
+            <MenuContainer/>
+        </div>);
     }
 }
 

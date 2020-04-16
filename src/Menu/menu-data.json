@@ -8,6 +8,6 @@
     {"name":"Thai Iced Tea","description":"","price":2.50,"type":"All Day Menu","category":"Beverage"},
     {"name":"Pad Thai Lunch Special","description":"Stir-fried Thai noodles with baby shrimp, egg, bean sprouts and dry tofu topped with ground peanuts.","price":7.95,"type":"Lunch Special","category":"Noodle And Fried Rice"},
     {"name":" Pad See Eaw Lunch Special","description":"Thai country style stir-fried broad rice noodles with Chinese broccoli and eggs.","price":7.95,"type":"Lunch Special","category":"Noodle And Fried Rice"},
-    {"name":"Spicy Basil Shrimp","description":" Stir-fried shrimp with pepper, onion, basil and chili paste. Served with rice. Spicy.","price":9.25,"type":"Lunch Special","category":"Seafood"},
-    {"name":"Mango Shrimp","description":" Mango, red onion, pepper, sweet pea pod, shrimp stir fried in sweet and sour sauce. Served with rice.","price":9.25,"type":"Lunch Special","category":"Seafood"}
+    {"name":"Spicy Basil Shrimp Lunch Special","description":" Stir-fried shrimp with pepper, onion, basil and chili paste. Served with rice. Spicy.","price":9.25,"type":"Lunch Special","category":"Seafood"},
+    {"name":"Mango Shrimp Lunch Special","description":" Mango, red onion, pepper, sweet pea pod, shrimp stir fried in sweet and sour sauce. Served with rice.","price":9.25,"type":"Lunch Special","category":"Seafood"}
 ]
