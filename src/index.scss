@@ -5,33 +5,70 @@ img {
     max-width: 50%;
     height: 50%;
 }
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.container{
     
-    li{
-        width: 10%;
-        padding: 20px;
-        list-style-type: none;
-        background-color: $color;
-        text-align: center;
-        border: 20px solid 37f52a;
-        margin: 0;    
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        li{
+            width: 10%;
+            padding: 20px;
+            list-style-type: none;
+            background-color: $color;
+            text-align: center;
+            border: 20px solid 37f52a;
+            margin: 0;    
+        }
+
+        .left-bttn{
+                border-radius: 10px 0 0 10px;
+            }
+        .right-bttn{
+            border-radius: 0 10px 10px 0;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    .left-bttn{
-            border-radius: 10px 0 0 10px;
+    .menu-container{
+        /*flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;*/
+        border: 2px solid;
+        
+        .menu-button{        
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(28, 161, 28);
+            border-radius: 25%;
+            padding: 25px;
+            margin: 10px;
+            outline: none;
         }
-    .right-bttn{
-        border-radius: 0 10px 10px 0;
+        .sidebar li{
+            list-style-type: none;
+            border: 10px solid purple;
+            border-radius: 1px;
+            font-size: 20;
+            }
+
+        
     }
-    /*.break{
-        display: flex;
-        flex-basis: 100%;
-    }*/
+    
+    .about p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
 }
+}
+
 
 .location-container{
     display: flex;

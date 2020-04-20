@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Location from "./Location/Location";
-import Menu from "./Menu/Menu";
+import MenuContainer from "./Menu/MenuContainer";
 import About from "./About";
 import Order from "./Order/Order";
 
@@ -25,7 +25,7 @@ class Main extends Component{
                     <div className="break"></div>
                     <div className="content">
                         <Route exact path="/" component={Home}/>
-                        <Route path="/menu" component={Menu}/>
+                        <Route path="/menu" component={MenuContainer}/>
                         <Route path="/location" component={Location}/>
                         <Route path="/about" component={About}/>
                         <Route path="/order" component={Order}/>
