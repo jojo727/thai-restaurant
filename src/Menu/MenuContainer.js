@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MenuButton from "./MenuButton";
+import { MenuButton } from "./MenuButton";
 import data from "./menu-data.json";
 import MenuSidebar from "./MenuSidebar";
 //import _ from "lodash";
@@ -23,7 +23,7 @@ class MenuContainer extends Component{
         super(props);
 
         this.state = {
-            all_day: true //shows all-day menu when true, lunch specials when false
+            all_day: false //shows all-day menu when true, lunch specials when false
         };
         this.handleMouseDown = this.handleMouseDown.bind(this);
         this.switchMenu = this.switchMenu.bind(this);
@@ -35,10 +35,12 @@ class MenuContainer extends Component{
         element.stopPropagation();
     }
     switchMenu = () => {
+        console.log(this.state.all_day);
         this.setState({
             all_day: !this.state.all_day
         });
     }
+    componentDidUpdate(){console.log(this.state.all_day)};
     render(){
         const all_day_menu = data.filter(item => item.type==="All Day Menu")
         const lunch_specials = data.filter(item => item.type==="Lunch Special")
@@ -49,6 +51,7 @@ class MenuContainer extends Component{
             <div className="menu-container">
                 <MenuButton name={"All Day Menu"} handleMouseDown={this.handleMouseDown}/>
                 <MenuButton name={"Lunch Specials"} handleMouseDown={this.handleMouseDown}/> 
+                <MenuButton name={"Beverages & Desert"} handleMouseDown={this.handleMouseDown}/>
                 <MenuSidebar displayingAllDay={this.state.all_day}/>
                 <div className="all-day">
                     <h2 className="menu-section">Appetizers</h2>
