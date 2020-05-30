@@ -1,13 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Home extends Component{
-    render(){
-        return(
-            <div>
-                <p>picture here</p>
-            </div>
-        );
-    }
-}
-
-export default Home;
+export const Home = () => (
+    <div className="home">
+        <img src="/assets/restaurant-outside.jpg" alt="Thai Green Leaf"></img>
+    </div>
+)

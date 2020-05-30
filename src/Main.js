@@ -4,7 +4,7 @@ import {
     NavLink,
     HashRouter
 } from "react-router-dom";
-import Home from "./Home";
+import { Home } from "./Home";
 import Location from "./Location/Location";
 import MenuContainer from "./Menu/MenuContainer";
 import { About } from "./About";
